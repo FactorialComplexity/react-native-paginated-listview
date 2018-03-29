@@ -43,5 +43,8 @@
     "preset": "react-native"
   },
   "author": "Blake Tarter <blakertarter@gmail.com> (http://blaketarter.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.6.1"
+  }
 }

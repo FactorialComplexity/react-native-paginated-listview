@@ -1,5 +1,5 @@
 const React = require('react');
-
+import PropTypes from 'prop-types'
 const {
   ListView,
   TouchableWithoutFeedback,
@@ -17,23 +17,23 @@ const styles = StyleSheet.create({
 });
 
 const PropTypes = {
-  onFetch: React.PropTypes.func,
-  renderRow: React.PropTypes.func.isRequired,
-  itemsPerPage: React.PropTypes.number,
-  rowHasChanged: React.PropTypes.func,
-  initialData: React.PropTypes.array,
-  enableEmptySections: React.PropTypes.bool,
-  renderSeperator: React.PropTypes.func,
-  renderHeader: React.PropTypes.func,
-  renderFooter: React.PropTypes.func,
-  renderSectionHeader: React.PropTypes.func,
-  scrollEnabled: React.PropTypes.bool,
-  paginationEnabled: React.PropTypes.bool,
-  onChangeVisibleRows: React.PropTypes.func,
-  renderScrollComponent: React.PropTypes.func,
-  autoFetch: React.PropTypes.bool,
-  renderFetchMoreComponent: React.PropTypes.func,
-  renderLoadingComponent: React.PropTypes.func,
+  onFetch: PropTypes.func,
+  renderRow: PropTypes.func.isRequired,
+  itemsPerPage: PropTypes.number,
+  rowHasChanged: PropTypes.func,
+  initialData: PropTypes.array,
+  enableEmptySections: PropTypes.bool,
+  renderSeperator: PropTypes.func,
+  renderHeader: PropTypes.func,
+  renderFooter: PropTypes.func,
+  renderSectionHeader: PropTypes.func,
+  scrollEnabled: PropTypes.bool,
+  paginationEnabled: PropTypes.bool,
+  onChangeVisibleRows: PropTypes.func,
+  renderScrollComponent: PropTypes.func,
+  autoFetch: PropTypes.bool,
+  renderFetchMoreComponent: PropTypes.func,
+  renderLoadingComponent: PropTypes.func,
 };
 
 const DefaultProps = {
