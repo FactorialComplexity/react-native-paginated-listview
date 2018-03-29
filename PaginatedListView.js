@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const PropTypes = {
+const DefaultPropTypes = {
   onFetch: PropTypes.func,
   renderRow: PropTypes.func.isRequired,
   itemsPerPage: PropTypes.number,
@@ -166,7 +166,7 @@ class PaginatedListView extends React.Component {
   }
 }
 
-PaginatedListView.propTypes = PropTypes;
+PaginatedListView.propTypes = DefaultPropTypes;
 PaginatedListView.defaultProps = DefaultProps;
 
 module.exports = PaginatedListView;
